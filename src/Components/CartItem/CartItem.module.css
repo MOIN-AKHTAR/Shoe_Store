@@ -1,0 +1,47 @@
+.CartItem{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0px;
+}
+.CartItem img{
+    height: 200px;
+    width: 200px;
+    margin: 0 1rem;
+}
+.CartItem button{
+    padding: 0.5rem 1rem;
+    margin: 0px 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+.CartItem button:focus{
+    outline: none;
+}
+.Inc{
+    background: orange;
+}
+.Dec{
+    background: orangered;
+}
+.removeFromCart{
+    background: red;
+}
+.Dec:hover{
+    background: rgb(245, 156, 124);
+}
+.Inc:hover{
+    background: rgb(238, 186, 89);
+}
+.removeFromCart:hover{
+    background: rgb(238, 103, 103);
+}
+
+@media (max-width:700px){
+    .CartItem button{
+        padding: 0.2rem 0.7rem;
+    }
+}
